@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.widget.logcatviewer.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:onClick="Logcat"
+        android:text="窗口日志输出 LogcatActivity"
+        tools:ignore="OnClick" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:onClick="FloatingLogcat"
+        android:text="浮动窗口日志输出 FloatingLogcat"
+        tools:ignore="OnClick" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:onClick="LogcatControl"
+        android:text="远程动态控制指定账号的窗口 LogcatControlActivity"
+        android:visibility="gone"
+        tools:ignore="OnClick" />
+
+</LinearLayout>
