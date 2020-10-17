@@ -25,15 +25,9 @@ allprojects {
     }
 }
 ```
+ 
 
-##### Step 2. Add a gradle dependency
-```
-dependencies {
-	implementation 'com.github.justinelock:LogcatWidget:1.0.1'
-}
-```
-
-##### Step 3.  AndroidManifest.xml
+##### Step 2.  AndroidManifest.xml
 ```
 <provider
     android:name="com.widget.logviewer.LogcatFileProvider"
@@ -46,7 +40,7 @@ dependencies {
 </provider>
 ```
 
-##### Step 4. 
+##### Step 3. 
 ```
 public class MainActivity extends AppCompatActivity {
 
